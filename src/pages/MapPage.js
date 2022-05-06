@@ -36,7 +36,6 @@ const MapPage = () => {
 		if (mapData) {
 			mapData.forEach(map => {
 				if (map.map_id.toString() === id) {
-					console.log(map);
 					setCurrMap(map);
 				}
 			});

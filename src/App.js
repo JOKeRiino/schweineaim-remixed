@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/schweineaim-remixed">
 			<Header />
 			<div className="page-container">
 				<div className="page-content-wrap">
