@@ -1,0 +1,20 @@
+.loader-container {
+	background: linear-gradient(to bottom right, #141E30, #243B55);
+	width: 100%;
+	height: calc(100vh - 160px);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.loader-container h2 {
+	margin-top: 50px;
+}
+
+.loader-container img {
+	border-width: 4px;
+	border-style: solid;
+	border-image: 
+	  linear-gradient(to bottom right, #00ccff, #243B55, #d400d4) 1;
+}

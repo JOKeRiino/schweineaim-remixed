@@ -1,0 +1,29 @@
+.center-grid {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.mapfin-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+	.mapfin-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mapfin-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1500px) {
+	.mapfin-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}

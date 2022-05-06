@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import BoysPage from "./pages/BoysPage";
+
+import HomePage from "./pages/HomePage";
+import MapPage from "./pages/MapPage";
+import MapsPage from "./pages/MapsPage";
+import MemberPage from "./pages/MemberPage";
+import Footer from "./components/Footer";
+import SkandalePage from "./pages/SkandalePage";
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Header />
+			<div className="page-container">
+				<div className="page-content-wrap">
+					<Routes>
+						<Route path="/" element={<HomePage />}></Route>
+						<Route path="/maps" element={<MapsPage />}></Route>
+						<Route path="/map/:id" element={<MapPage />}></Route>
+						<Route path="/member/:name" element={<MemberPage />}></Route>
+						<Route path="/members" element={<BoysPage />}></Route>
+						<Route path="/skandale" element={<SkandalePage />}></Route>
+					</Routes>
+				</div>
+				<Footer />
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;

@@ -1,0 +1,24 @@
+.homepage-container {
+	background: linear-gradient(to bottom right, #141E30, #243B55);
+	width: 100%;
+	min-height: 70vh;
+}
+
+.map-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	max-width: 1400px;
+	margin: 0px auto;
+}
+
+@media (max-width: 1050px) {
+	.map-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.map-grid {
+		grid-template-columns: 1fr;
+	}
+}
