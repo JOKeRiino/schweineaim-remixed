@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.37a285e3.css",
+    "main.js": "/static/js/main.6b7de9d2.js",
+    "static/media/kekw.gif": "/static/media/kekw.8de04908acb88642b633.gif",
+    "static/media/loading.gif": "/static/media/loading.f389d8abceef03c49b92.gif",
+    "static/media/schweineaim.png": "/static/media/schweineaim.1af8f8324810fb0d60f1.png",
+    "static/media/modcheck.gif": "/static/media/modcheck.dada98a2b7c38da96ded.gif",
+    "static/media/röder.png": "/static/media/röder.5ec5ffc8fc4fed41c26d.png",
+    "static/media/trilluxe.png": "/static/media/trilluxe.a9e112a1d29b99707563.png",
+    "static/media/copium.webp": "/static/media/copium.754d60782bd141fe57cd.webp",
+    "static/media/blader.png": "/static/media/blader.f7aecb9ae89cb5cbb44d.png",
+    "static/media/marf.png": "/static/media/marf.db2739ddc7164e3acc2b.png",
+    "index.html": "/index.html",
+    "main.37a285e3.css.map": "/static/css/main.37a285e3.css.map",
+    "main.6b7de9d2.js.map": "/static/js/main.6b7de9d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37a285e3.css",
+    "static/js/main.6b7de9d2.js"
+  ]
+}
