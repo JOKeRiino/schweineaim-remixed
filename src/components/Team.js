@@ -85,7 +85,7 @@ const Team = ({ all }) => {
 									<td>👾 Das Projekt auf:</td>
 									<td>
 										<a
-											href="https://github.com/JOKeRiino/schweineaim-remixedv"
+											href="https://github.com/JOKeRiino/schweineaim-remixed"
 											target="_blank"
 											rel="noreferrer"
 										>Github</a>
