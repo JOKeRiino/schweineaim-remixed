@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/schweineaim-remixed/static/css/main.74e15584.css",
-    "main.js": "/schweineaim-remixed/static/js/main.539e2fcc.js",
+    "main.css": "/schweineaim-remixed/static/css/main.59e1f197.css",
+    "main.js": "/schweineaim-remixed/static/js/main.74942934.js",
     "static/media/kekw.gif": "/schweineaim-remixed/static/media/kekw.8de04908acb88642b633.gif",
     "static/media/loading.gif": "/schweineaim-remixed/static/media/loading.f389d8abceef03c49b92.gif",
     "static/media/schweineaim.png": "/schweineaim-remixed/static/media/schweineaim.1af8f8324810fb0d60f1.png",
@@ -12,11 +12,11 @@
     "static/media/blader.png": "/schweineaim-remixed/static/media/blader.f7aecb9ae89cb5cbb44d.png",
     "static/media/marf.png": "/schweineaim-remixed/static/media/marf.db2739ddc7164e3acc2b.png",
     "index.html": "/schweineaim-remixed/index.html",
-    "main.74e15584.css.map": "/schweineaim-remixed/static/css/main.74e15584.css.map",
-    "main.539e2fcc.js.map": "/schweineaim-remixed/static/js/main.539e2fcc.js.map"
+    "main.59e1f197.css.map": "/schweineaim-remixed/static/css/main.59e1f197.css.map",
+    "main.74942934.js.map": "/schweineaim-remixed/static/js/main.74942934.js.map"
   },
   "entrypoints": [
-    "static/css/main.74e15584.css",
-    "static/js/main.539e2fcc.js"
+    "static/css/main.59e1f197.css",
+    "static/js/main.74942934.js"
   ]
 }
