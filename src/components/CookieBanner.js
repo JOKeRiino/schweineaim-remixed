@@ -25,17 +25,22 @@ const CookieBanner = () => {
 	}
 
 	return (
-		<div className={`cookie-container ${done ? "hidden" : ""}`}>
-			<p>
-				This website displays content from third-party sources such as Twitch, Youtube, Streamable and Github
-				that may require the use of third-party cookies. These cookies might be neccessary to view content on this website.
-				<Link to="/cookie-policy">Privacy Policy</Link>
-			</p>
-			<div>
-				<button className="button-accept-some" onClick={onAcceptAll}>Allow All</button>
-				<button className="button-accept-some" onClick={() => onAcceptSome({ firstParty: true })}>Allow Necessary (Videos won't work)</button>
+		<React.Fragment>
+			<div className={`cookie-div ${done ? "hidden" : ""}`}>
+				<div className="cookie-container">
+					<p>
+						This website displays content from third-party sources such as Twitch, Youtube, Streamable and Github
+						that may require the use of third-party cookies. These cookies might be neccessary to view content on this website.
+						<Link to="/cookie-policy">Privacy Policy</Link>
+					</p>
+					<div>
+						<button className="button-accept-some" onClick={onAcceptAll}>Allow All</button>
+						<button className="button-accept-some" onClick={() => onAcceptSome({ firstParty: true })}>Allow Necessary (Videos won't work)</button>
+					</div>
+				</div>
 			</div>
-		</div>
+			<div className={`cookie-div ${!done ? "hidden" : ""}`} onClick={() => setDone(false)} >Cookie Preferences</div>
+		</React.Fragment>
 	);
 };
 

@@ -1,3 +1,11 @@
+.cookie-div {
+	z-index: 999;
+	position:fixed;
+	top: 95vh;
+	right: 20px;
+	font-size: .7rem;
+}
+
 .cookie-container {
 	width: 350px;
 	height: 240px;
