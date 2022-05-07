@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useCookieConsentContext } from '@use-cookie-consent/react';
+import { Link } from "react-router-dom";
 import './CookieBanner.css';
 
 const CookieBanner = () => {
@@ -18,10 +19,6 @@ const CookieBanner = () => {
 		setDone(true);
 	}
 
-	const onRejectAll = () => {
-		window.location.href = "http://google.com";
-	}
-
 	const onAcceptSome = (consent) => {
 		acceptCookies(consent)
 		setDone(true);
@@ -32,11 +29,10 @@ const CookieBanner = () => {
 			<p>
 				This website displays content from third-party sources such as Twitch, Youtube, Streamable and Github
 				that may require the use of third-party cookies. These cookies might be neccessary to view content on this website.
-				<a href="/cookie-policy">Privacy Policy</a>
+				<Link to="/cookie-policy">Privacy Policy</Link>
 			</p>
-			<button className="cookie-button" onClick={onAcceptAll}>Allow All</button>
-			<button className="cookie-button" onClick={onRejectAll}>Reject All</button>
 			<div>
+				<button className="button-accept-some" onClick={onAcceptAll}>Allow All</button>
 				<button className="button-accept-some" onClick={() => onAcceptSome({ firstParty: true })}>Allow Necessary (Videos won't work)</button>
 			</div>
 		</div>

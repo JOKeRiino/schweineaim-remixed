@@ -52,6 +52,10 @@
 	cursor: pointer;
 }
 
+.cookie-container .button-accept-some:nth-of-type(1) {
+	background-color: rgb(160, 225, 63);
+}
+
 .cookie-container .cookie-button:nth-of-type(1) {
 	background-color: rgb(160, 225, 63);
 	color: black;

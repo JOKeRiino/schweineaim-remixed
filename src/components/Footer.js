@@ -13,7 +13,6 @@ const Footer = () => {
 					<Link className="li-link" to="/maps">Alle Kacky Maps</Link>
 					<Link className="li-link" to="/members">Team Schweineaim</Link>
 					<Link className="li-link" to="/skandale">Skandale</Link>
-					{/* <Link className="li-link" to="/cookie-policy">Cookie Policy</Link> */}
 				</div>
 				<div className="footer-row-flex">
 					<p className="col">
@@ -26,7 +25,7 @@ const Footer = () => {
 				</div>
 				<p className="footer-text-flex">
 					Diese Webseite dient keinem kommerziellen Zweck, sondern dient ausschließlich zur Unterhaltung und zu privaten Zwecken. Jegliche Inhalte gehören den rechtmäßgen Rechteinhabern.
-					<a href="/cookie-policy">Datenschutzerklärung</a>
+					<Link to="/cookie-policy">Datenschutzerklärung</Link>
 				</p>
 			</div>
 		</div>
