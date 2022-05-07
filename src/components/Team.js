@@ -7,6 +7,7 @@ import marfPic from '../img/marf.png';
 import fibuPic from '../img/fibu.png';
 import bladerPic from '../img/blader.png';
 import schweineaimPic from '../img/schweineaim.png';
+import nallikPic from '../img/nallik.png';
 
 const Team = ({ all }) => {
 	return (
@@ -21,6 +22,7 @@ const Team = ({ all }) => {
 						<Member name="Blader" imgSrc={bladerPic} />
 						<Member name="Marf" imgSrc={marfPic} />
 						<Member name="Fibu" imgSrc={fibuPic} />
+						<Member name="Nallik" imgSrc={nallikPic} />
 					</React.Fragment>
 					: ""
 				}
@@ -60,6 +62,11 @@ const Team = ({ all }) => {
 									<td>😶‍🌫️ Smith:</td>
 									<td>?</td>
 									<td>?</td>
+								</tr>
+								<tr>
+									<td>🐧 Nallik:</td>
+									<td>?</td>
+									<td><a href="https://twitter.com/na1lik" target="_blank" rel="noreferrer">Twitter</a></td>
 								</tr>
 							</tbody>
 						</table>

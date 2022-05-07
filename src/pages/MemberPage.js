@@ -48,6 +48,8 @@ const MemberPage = () => {
 			return <div className="titlelvl"><i>"Smith braucht keine Clips"</i></div>
 		} else if (name === "Fibu") {
 			return <div className="titlelvl"><i>"Auch dabei"</i></div>
+		} else if (name === "Nallik") {
+			return <div className="titlelvl"><i>"Jura und vibin'"</i></div>
 		}
 	}
 
