@@ -29,7 +29,7 @@ function App() {
 							<Route path="/member/:name" element={<MemberPage />}></Route>
 							<Route path="/members" element={<BoysPage />}></Route>
 							<Route path="/skandale" element={<SkandalePage />}></Route>
-							<Route path="/cookie-policy" element={<CookiePolicy />}></Route>
+							{/* <Route path="/cookie-policy" element={<CookiePolicy />}></Route> */}
 						</Routes>
 					</div>
 					<CookieBanner />

@@ -13,7 +13,7 @@ const Footer = () => {
 					<Link className="li-link" to="/maps">Alle Kacky Maps</Link>
 					<Link className="li-link" to="/members">Team Schweineaim</Link>
 					<Link className="li-link" to="/skandale">Skandale</Link>
-					<Link className="li-link" to="/cookie-policy">Cookie Policy</Link>
+					{/* <Link className="li-link" to="/cookie-policy">Cookie Policy</Link> */}
 				</div>
 				<h4><b>Disclaimer: </b></h4>
 				<div className="footer-divider"></div>
