@@ -18,6 +18,12 @@
 	font-size: .95rem;
 }
 
+.cookie-container p a {
+	color: black;
+	font-size: .95rem;
+	margin-left: 5px;
+}
+
 .cookie-container .cookie-button {
 	width: 48%;
 	margin: 1%;

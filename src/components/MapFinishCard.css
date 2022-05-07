@@ -90,7 +90,8 @@
 
 .mini-video {
 	position: absolute;
-	left: 0;
+	width: 100%;
+	left: -2%;
 	top: 35px;
 	margin: 0 6px;
 	display: flex;

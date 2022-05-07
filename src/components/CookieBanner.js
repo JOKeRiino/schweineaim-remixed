@@ -32,6 +32,7 @@ const CookieBanner = () => {
 			<p>
 				This website displays content from third-party sources such as Twitch, Youtube, Streamable and Github
 				that may require the use of third-party cookies. These cookies might be neccessary to view content on this website.
+				<a href="/cookie-policy">Privacy Policy</a>
 			</p>
 			<button className="cookie-button" onClick={onAcceptAll}>Allow All</button>
 			<button className="cookie-button" onClick={onRejectAll}>Reject All</button>

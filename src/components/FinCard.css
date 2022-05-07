@@ -11,3 +11,12 @@
 	border-image: 
 	  linear-gradient(to bottom right, #00ccff, #243B55, #d400d4) 1;
 }
+
+.card-container .fin-player-title {
+	display: flex;
+	flex-direction: row;
+}
+
+.card-container .fin-player-title p {
+	margin-left: 5px;
+}

@@ -4,7 +4,7 @@ import './Team.css';
 import trilluxePic from '../img/trilluxe.png';
 import roederPic from '../img/röder.png';
 import marfPic from '../img/marf.png';
-// import fibuPic from '../img/fibu.png';
+import fibuPic from '../img/fibu.png';
 import bladerPic from '../img/blader.png';
 import schweineaimPic from '../img/schweineaim.png';
 
@@ -20,7 +20,7 @@ const Team = ({ all }) => {
 					<React.Fragment>
 						<Member name="Blader" imgSrc={bladerPic} />
 						<Member name="Marf" imgSrc={marfPic} />
-						<Member name="Fibu" imgSrc={schweineaimPic} />
+						<Member name="Fibu" imgSrc={fibuPic} />
 					</React.Fragment>
 					: ""
 				}

@@ -1,7 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { TwitchClip } from "react-twitch-embed";
-import { useCookieConsentContext } from '@use-cookie-consent/react'
+import { useCookieConsentContext } from '@use-cookie-consent/react';
+import './VideoPlayer.css';
 
 import modcheck from '../img/modcheck.gif';
 
@@ -36,9 +37,9 @@ const VideoPlayer = ({ source, width, height }) => {
 				}
 			}
 		}
-		return <div><h3>Any Clippers?</h3><img src={modcheck} alt="fish turning his head twitch emote" /><p>(Gibt kein Clip!)</p></div>
+		return <div className="no-clip"><h3>Any Clippers?</h3><img src={modcheck} alt="fish turning his head twitch emote" /><p>(Gibt kein Clip!)</p></div>
 	}
-	return (<div>
+	return (<div className="no-clip">
 		Please accept third-party cookies to view this content.
 	</div>)
 }

@@ -15,9 +15,6 @@ const Footer = () => {
 					<Link className="li-link" to="/skandale">Skandale</Link>
 					{/* <Link className="li-link" to="/cookie-policy">Cookie Policy</Link> */}
 				</div>
-				<h4><b>Disclaimer: </b></h4>
-				<div className="footer-divider"></div>
-				<p className="footer-text-flex">Diese Webseite dient keinem kommerziellen Zweck, sondern dient ausschließlich zur Unterhaltung und zu privaten Zwecken. Jegliche Inhalte gehören den rechtmäßgen Rechteinhabern.</p>
 				<div className="footer-row-flex">
 					<p className="col">
 						Made with 🐷💜 by <a
@@ -27,6 +24,10 @@ const Footer = () => {
 						>Riino</a>
 					</p>
 				</div>
+				<p className="footer-text-flex">
+					Diese Webseite dient keinem kommerziellen Zweck, sondern dient ausschließlich zur Unterhaltung und zu privaten Zwecken. Jegliche Inhalte gehören den rechtmäßgen Rechteinhabern.
+					<a href="/cookie-policy">Datenschutzerklärung</a>
+				</p>
 			</div>
 		</div>
 	)
