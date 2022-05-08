@@ -27,6 +27,11 @@ const Footer = () => {
 					Diese Webseite dient keinem kommerziellen Zweck, sondern dient ausschließlich zur Unterhaltung und zu privaten Zwecken. Jegliche Inhalte gehören den rechtmäßgen Rechteinhabern.
 					<Link to="/cookie-policy">Datenschutzerklärung</Link>
 				</p>
+				<div className="footer-row-flex">
+					<p className="col">
+						&copy;{new Date().getFullYear()} Riino. All Rights Reserved.
+					</p>
+				</div>
 			</div>
 		</div>
 	)
