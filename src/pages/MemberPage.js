@@ -5,8 +5,8 @@ import Loader from "../components/Loader";
 import MapFinishCard from "../components/MapFinishCard";
 import './MemberPage.css';
 
-const playerUrl = "https://script.google.com/macros/s/AKfycbwWoAECpywmQxKZnoVuI1UmwbghY0EorgRK0gsHYqHzYhL33XDlz0Vj66SsH3xoWe2BHw/exec?action=getPlayer&player=";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbwWoAECpywmQxKZnoVuI1UmwbghY0EorgRK0gsHYqHzYhL33XDlz0Vj66SsH3xoWe2BHw/exec?action=getMaps';
+const playerUrl = "https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getPlayer&player=";
+const mapsUrl = 'https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getMaps';
 
 const MemberPage = () => {
 	const [playerData, setPlayerData] = useState(undefined);

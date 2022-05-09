@@ -27,7 +27,7 @@ const Header = () => {
 						<Link to="/members">Die Boys</Link>
 					</li>
 					<li>
-						<Link to="/skandale">(Skandale)</Link>
+						<Link to="/skandale">Skandale</Link>
 					</li>
 				</ul>
 			</nav>

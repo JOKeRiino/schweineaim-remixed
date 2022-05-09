@@ -17,7 +17,7 @@ const MapFinishCard = ({ map, clip }) => {
 				LVL: {map.map_dif === 1 ? "Free" : map.map_dif === 2 ? "Geht" : map.map_dif === 3 ? "Hard" : map.map_dif === 4 ? "Imp" : map.map_dif === 5 ? "Bruh" : ""}
 			</div>
 			<div className="mini-video">
-				<VideoPlayer source={clip} width="300px" height="169px" />
+				<VideoPlayer source={clip} width="300px" height="169px" loading="lazy" />
 				{clip ? <p>Video geht nicht? <a href={clip} target="_blank" rel="noreferrer">Hier</a></p> : ""}
 			</div>
 		</div >

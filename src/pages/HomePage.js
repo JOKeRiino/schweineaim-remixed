@@ -6,8 +6,8 @@ import Team from "../components/Team";
 import MapCard from "../components/MapCard";
 import Loader from "../components/Loader";
 
-const finishUrl = "https://script.google.com/macros/s/AKfycbwWoAECpywmQxKZnoVuI1UmwbghY0EorgRK0gsHYqHzYhL33XDlz0Vj66SsH3xoWe2BHw/exec?action=getFinishes";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbwWoAECpywmQxKZnoVuI1UmwbghY0EorgRK0gsHYqHzYhL33XDlz0Vj66SsH3xoWe2BHw/exec?action=getMaps';
+const finishUrl = "https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getFinishes";
+const mapsUrl = 'https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getMaps';
 
 const HomePage = () => {
 	const [mapData, setMapData] = useState(undefined);

@@ -20,7 +20,7 @@ const FinCard = ({ fin }) => {
 			/>
 			<h2 className="fin-player-title">{fin.player}{fin.clip ? <p><a href={fin.clip} target="_blank" rel="noreferrer">Clip</a>:</p> : ''}</h2>
 			{fin.clip ? <div className="mini-video-flex">
-				<VideoPlayer source={fin.clip} width="300px" height="169px" />
+				<VideoPlayer source={fin.clip} width="300px" height="169px" loading="lazy" />
 			</div> : ""}
 		</div>
 	)
