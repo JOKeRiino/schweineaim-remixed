@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/schweineaim-remixed/static/css/main.1b259724.css",
-    "main.js": "/schweineaim-remixed/static/js/main.8dbdcf77.js",
+    "main.css": "/schweineaim-remixed/static/css/main.93ece286.css",
+    "main.js": "/schweineaim-remixed/static/js/main.64871c9e.js",
     "static/media/kekw.gif": "/schweineaim-remixed/static/media/kekw.8de04908acb88642b633.gif",
-    "static/media/loading.gif": "/schweineaim-remixed/static/media/loading.f389d8abceef03c49b92.gif",
-    "static/media/schweineaim.png": "/schweineaim-remixed/static/media/schweineaim.1af8f8324810fb0d60f1.png",
+    "static/media/loading.gif": "/schweineaim-remixed/static/media/loading.fe0d9d9007d00ae3eee9.gif",
     "static/media/modcheck.gif": "/schweineaim-remixed/static/media/modcheck.dada98a2b7c38da96ded.gif",
-    "static/media/röder.png": "/schweineaim-remixed/static/media/röder.5ec5ffc8fc4fed41c26d.png",
-    "static/media/trilluxe.png": "/schweineaim-remixed/static/media/trilluxe.a9e112a1d29b99707563.png",
+    "static/media/schweineaim.webp": "/schweineaim-remixed/static/media/schweineaim.2eb4aa6bc6a9c85613c8.webp",
     "static/media/copium.webp": "/schweineaim-remixed/static/media/copium.754d60782bd141fe57cd.webp",
-    "static/media/blader.png": "/schweineaim-remixed/static/media/blader.f7aecb9ae89cb5cbb44d.png",
-    "static/media/nallik.png": "/schweineaim-remixed/static/media/nallik.938c6a746fee532e6071.png",
-    "static/media/marf.png": "/schweineaim-remixed/static/media/marf.db2739ddc7164e3acc2b.png",
+    "static/media/nallik.webp": "/schweineaim-remixed/static/media/nallik.1c466b67773586ada6c2.webp",
+    "static/media/blader.webp": "/schweineaim-remixed/static/media/blader.94085876eba7e3e9d957.webp",
+    "static/media/marf.webp": "/schweineaim-remixed/static/media/marf.eafa63e73b9d8dd5edac.webp",
+    "static/media/fibu.webp": "/schweineaim-remixed/static/media/fibu.871c8a59a52920740db7.webp",
+    "static/media/röder.webp": "/schweineaim-remixed/static/media/röder.44800f1147eae060efa4.webp",
+    "static/media/trilluxe.webp": "/schweineaim-remixed/static/media/trilluxe.e43967d94edaf3a05a13.webp",
     "index.html": "/schweineaim-remixed/index.html",
-    "main.1b259724.css.map": "/schweineaim-remixed/static/css/main.1b259724.css.map",
-    "main.8dbdcf77.js.map": "/schweineaim-remixed/static/js/main.8dbdcf77.js.map"
+    "main.93ece286.css.map": "/schweineaim-remixed/static/css/main.93ece286.css.map",
+    "main.64871c9e.js.map": "/schweineaim-remixed/static/js/main.64871c9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b259724.css",
-    "static/js/main.8dbdcf77.js"
+    "static/css/main.93ece286.css",
+    "static/js/main.64871c9e.js"
   ]
 }
