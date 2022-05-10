@@ -1,9 +1,29 @@
 import React from "react";
-import './MapFinishCard.css';
 import { Link } from "react-router-dom";
+
 import VideoPlayer from "./VideoPlayer";
 
+import './MapFinishCard.css';
+
 const MapFinishCard = ({ map, clip }) => {
+
+	const getDif = (difficulty) => {
+		switch (difficulty) {
+			case 1:
+				return "Free";
+			case 2:
+				return "Geht";
+			case 3:
+				return "Hard";
+			case 4:
+				return "Imp";
+			case 5:
+				return "Bruh";
+			default:
+				return "";
+		}
+	}
+
 	return (
 		<div className={"map-fin-box dif" + map.map_dif}>
 			<div className={"box-id dif" + map.map_dif}>{map.map_id}</div>
@@ -14,7 +34,7 @@ const MapFinishCard = ({ map, clip }) => {
 				<Link to={"/map/" + map.map_id}>➤ View Map</Link>
 			</div>
 			<div className={"maplvl dif" + map.map_dif}>
-				LVL: {map.map_dif === 1 ? "Free" : map.map_dif === 2 ? "Geht" : map.map_dif === 3 ? "Hard" : map.map_dif === 4 ? "Imp" : map.map_dif === 5 ? "Bruh" : ""}
+				LVL: {getDif(map.map_dif)}
 			</div>
 			<div className="mini-video">
 				<VideoPlayer source={clip} width="300px" height="169px" loading="lazy" />

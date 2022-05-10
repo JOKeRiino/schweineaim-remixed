@@ -1,4 +1,5 @@
 import React from "react";
+
 import './CookiePolicy.css';
 
 const CookiePolicy = () => {

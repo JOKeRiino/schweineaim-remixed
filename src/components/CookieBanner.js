@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useCookieConsentContext } from '@use-cookie-consent/react';
 import { Link } from "react-router-dom";
+
 import './CookieBanner.css';
 
 const CookieBanner = () => {
@@ -19,7 +20,7 @@ const CookieBanner = () => {
 		setDone(true);
 	}
 
-	const onAcceptSome = (consent) => {
+	const onAcceptSome = consent => {
 		acceptCookies(consent)
 		setDone(true);
 	}
@@ -29,7 +30,7 @@ const CookieBanner = () => {
 			<div className={`cookie-div ${done ? "hidden" : ""}`}>
 				<div className="cookie-container">
 					<p>
-						This website displays content from third-party sources such as Twitch, Youtube, Streamable and Github
+						This website displays content from third-party sources such as Twitch, Youtube, and Streamable
 						that may require the use of third-party cookies. These cookies might be neccessary to view content on this website.
 						<Link to="/cookie-policy">Privacy Policy</Link>
 					</p>

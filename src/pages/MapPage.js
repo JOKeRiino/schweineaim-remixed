@@ -3,15 +3,14 @@ import axios from "axios";
 import { useParams } from 'react-router-dom';
 
 import Loader from '../components/Loader';
-import './MapPage.css';
 import FinCard from "../components/FinCard";
+import VideoPlayer from "../components/VideoPlayer";
+import { finishUrl, mapsUrl } from '../api.config';
 
 import copiumPic from '../img/copium.webp';
 import kekwPic from '../img/kekw.gif';
-import VideoPlayer from "../components/VideoPlayer";
 
-const finishUrl = "https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getFinishes";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getMaps';
+import './MapPage.css';
 
 const MapPage = () => {
 	const [finData, setFinData] = useState(undefined);
@@ -60,12 +59,29 @@ const MapPage = () => {
 		})
 	}
 
+	const getDif = (difficulty) => {
+		switch (difficulty) {
+			case 1:
+				return "Free";
+			case 2:
+				return "Geht";
+			case 3:
+				return "Hard";
+			case 4:
+				return "Impossible";
+			case 5:
+				return "Bruh";
+			default:
+				return "";
+		}
+	}
+
 	if (currMap) {
 		return (
 			<div className="homepage-container">
 				<div className={"title dif" + currMap.map_dif}>Kacky Remixed #{currMap.map_id}</div>
 				<div className={"titlelvl dif" + currMap.map_dif}>
-					LVL: {currMap.map_dif === 1 ? "Free" : currMap.map_dif === 2 ? "Geht" : currMap.map_dif === 3 ? "Hard" : currMap.map_dif === 4 ? "Impossible" : currMap.map_dif === 5 ? "Bruh" : ""}
+					LVL: {getDif(currMap.map_dif)}
 				</div>
 
 				<div className="video-container">

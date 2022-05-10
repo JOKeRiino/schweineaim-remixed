@@ -1,22 +1,46 @@
 import React from "react";
 
-import trilluxePic from '../img/trilluxe.png';
-import roederPic from '../img/röder.png';
-import schweinePic from '../img/schweineaim.png';
 import Member from "./Member";
-import './FinCard.css';
 import VideoPlayer from "./VideoPlayer";
-import marfPic from '../img/marf.png';
-import bladerPic from '../img/blader.png';
-import fibuPic from '../img/fibu.png';
-import nallikPic from '../img/nallik.png';
+
+import trilluxePic from '../img/trilluxe.webp';
+import roederPic from '../img/röder.webp';
+import schweinePic from '../img/schweineaim.webp';
+import marfPic from '../img/marf.webp';
+import bladerPic from '../img/blader.webp';
+import fibuPic from '../img/fibu.webp';
+import nallikPic from '../img/nallik.webp';
+
+import './FinCard.css';
 
 const FinCard = ({ fin }) => {
+
+
+	const getImage = (player) => {
+		switch (player) {
+			case 'Röder':
+				return roederPic;
+			case 'TrilluXe':
+				return trilluxePic;
+			case 'Marf':
+				return marfPic;
+			case 'Blader':
+				return bladerPic;
+			case 'Fibu':
+				return fibuPic;
+			case 'Nallik':
+				return nallikPic;
+			default:
+				return schweinePic;
+		}
+	}
+
+
 	return (
 		<div className="card-container">
 			<Member
 				name={fin.player}
-				imgSrc={fin.player === "Röder" ? roederPic : fin.player === "TrilluXe" ? trilluxePic : fin.player === "Marf" ? marfPic : fin.player === "Blader" ? bladerPic : fin.player === "Fibu" ? fibuPic : fin.player === "Nallik" ? nallikPic : schweinePic}
+				imgSrc={getImage(fin.player)}
 			/>
 			<h2 className="fin-player-title">{fin.player}{fin.clip ? <p><a href={fin.clip} target="_blank" rel="noreferrer">Clip</a>:</p> : ''}</h2>
 			{fin.clip ? <div className="mini-video-flex">

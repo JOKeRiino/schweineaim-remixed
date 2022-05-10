@@ -10,10 +10,10 @@ import MapsPage from "./pages/MapsPage";
 import MemberPage from "./pages/MemberPage";
 import Footer from "./components/Footer";
 import SkandalePage from "./pages/SkandalePage";
-
-import './App.css';
 import CookieBanner from "./components/CookieBanner";
 import CookiePolicy from "./pages/CookiePolicy";
+
+import './App.css';
 
 function App() {
 	return (

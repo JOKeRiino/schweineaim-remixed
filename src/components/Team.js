@@ -1,13 +1,16 @@
 import React from "react";
+
 import Member from "./Member";
+
+import trilluxePic from '../img/trilluxe.webp';
+import roederPic from '../img/röder.webp';
+import marfPic from '../img/marf.webp';
+import fibuPic from '../img/fibu.webp';
+import bladerPic from '../img/blader.webp';
+import schweineaimPic from '../img/schweineaim.webp';
+import nallikPic from '../img/nallik.webp';
+
 import './Team.css';
-import trilluxePic from '../img/trilluxe.png';
-import roederPic from '../img/röder.png';
-import marfPic from '../img/marf.png';
-import fibuPic from '../img/fibu.png';
-import bladerPic from '../img/blader.png';
-import schweineaimPic from '../img/schweineaim.png';
-import nallikPic from '../img/nallik.png';
 
 const Team = ({ all }) => {
 	return (

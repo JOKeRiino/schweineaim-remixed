@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import './HomePage.css';
 import Team from "../components/Team";
 import MapCard from "../components/MapCard";
 import Loader from "../components/Loader";
 import FinishChart from "../components/FinishChart";
+import { finishUrl, mapsUrl } from '../api.config';
 
-const finishUrl = "https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getFinishes";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getMaps';
+import './HomePage.css';
 
 const HomePage = () => {
 	const [mapData, setMapData] = useState(undefined);
@@ -48,7 +47,9 @@ const HomePage = () => {
 			<div className="homepage-container">
 				<Team />
 				<FinishChart />
-				<h2 className="team-title">Bereits abgeschlossene Maps:</h2>
+				<h2 className="team-title">
+					Recently Finished Maps
+				</h2>
 				<div className="center-grid">
 					<div className="map-grid">
 						{renderMaps()}

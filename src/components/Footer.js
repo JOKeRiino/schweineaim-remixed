@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import './Footer.css';
 
 const Footer = () => {
 	return (
 		<div className="main-footer">
 			<div className="footer-container">
-				<h4>Quick Links:</h4>
+				<h2>Quick Links:</h2>
 				<div className="footer-divider"></div>
 				<div className="footer-row-flex">
 					<Link className="li-link" to="/">Home</Link>

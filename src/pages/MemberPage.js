@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+
 import Loader from "../components/Loader";
 import MapFinishCard from "../components/MapFinishCard";
-import './MemberPage.css';
+import { playerUrl, mapsUrl } from "../api.config";
 
-const playerUrl = "https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getPlayer&player=";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getMaps';
+import './MemberPage.css';
 
 const MemberPage = () => {
 	const [playerData, setPlayerData] = useState(undefined);
@@ -36,20 +36,23 @@ const MemberPage = () => {
 	}
 
 	const renderQuote = () => {
-		if (name === "Trilluxe") {
-			return <div className="titlelvl"><i>"Die Ruhe selbst. TrilluxeWINDMUEHLE"</i></div>
-		} else if (name === "Röder") {
-			return <div className="titlelvl"><i>"Trackmania-Profi mit Ghetto-Allüren"</i></div>
-		} else if (name === "Marf") {
-			return <div className="titlelvl"><i>"Der eigentliche King-of-Twitch"</i></div>
-		} else if (name === "Blader") {
-			return <div className="titlelvl"><i>"Trackmania Smurf"</i></div>
-		} else if (name === "Smith") {
-			return <div className="titlelvl"><i>"Smith braucht keine Clips"</i></div>
-		} else if (name === "Fibu") {
-			return <div className="titlelvl"><i>"Auch dabei"</i></div>
-		} else if (name === "Nallik") {
-			return <div className="titlelvl"><i>"Jura und vibin'"</i></div>
+		switch (name) {
+			case "Trilluxe":
+				return <div className="titlelvl"><i>"Die Ruhe selbst. TrilluxeWINDMUEHLE"</i></div>;
+			case "Röder":
+				return <div className="titlelvl"><i>"Schmeiß' die Fuffies durch den Club und schrei BAU, BAU"</i></div>;
+			case "Marf":
+				return <div className="titlelvl"><i>"Der eigentliche King-of-Twitch"</i></div>;
+			case "Blader":
+				return <div className="titlelvl"><i>"Trackmania Smurf"</i></div>;
+			case "Smith":
+				return <div className="titlelvl"><i>"Smith braucht keine Clips"</i></div>;
+			case "Fibu":
+				return <div className="titlelvl"><i>"Skill Issue"</i></div>;
+			case "Nallik":
+				return <div className="titlelvl"><i>"Jura und vibin'"</i></div>;
+			default:
+				return ''
 		}
 	}
 
@@ -59,7 +62,7 @@ const MemberPage = () => {
 				<div className={"title"}>{name}</div>
 				{renderQuote()}
 				<div className={"titlelvl"}>
-					Finished: {playerData.length}/50
+					Finished: {playerData.length}/51
 				</div>
 				<div className="center-grid">
 					<div className="mapfin-grid">

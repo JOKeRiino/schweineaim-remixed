@@ -7,7 +7,12 @@
 - If there is a clip available, the clip should be embedded on the page
 
 ## The Backend of this application
-- Is literally just a google sheet that has been made into an API using google scripts
+- Is literally just a google sheet that serves as an API using google scripts
 
 ## Current Release
-0.8.0 Alpha Release
+1.0.0 Initial Release
+
+- Added Charts
+- Overall Code Cleanup
+- Various bugfixes
+- Changed png to webp and compressed gifs

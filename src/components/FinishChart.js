@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ResponsiveContainer, LineChart, XAxis, YAxis, CartesianGrid, Tooltip, Line, Legend } from "recharts";
-import useWindowDimensions from '../Hooks/useWindowDimensions';
-import './FinishChart.css';
-import Loader from "./Loader";
 
-const finishUrl = "https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getFinishes";
+import Loader from "./Loader";
+import { finishUrl } from '../api.config';
+
+import './FinishChart.css';
 
 const FinishChart = () => {
 	const [finData, setFinData] = useState([]);
-	const { width } = useWindowDimensions();
 
-	const data = [
-		{
-			"name": "Date",
-			"trill": [86, 87, 88],
-			"pv": 2400,
-		},
-	]
-
+	// const data = [
+	// 	{
+	// 		"name": "Date",
+	// 		"trill": [86, 87, 88],
+	// 		"pv": 2400,
+	// 	},
+	// ]
 
 	useEffect(() => {
 		axios.get(finishUrl)

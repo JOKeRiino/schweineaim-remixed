@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import schweineaim from '../img/schweineaim.webp';
+
 import '../components/Header.css';
-import schweineaim from '../img/schweineaim.png';
 
 const Header = () => {
 	return (
 		<div className="header-container">
 			<div className="title-div">
-				<div className="left-title">Schweineaim</div>
+				<h1 className="left-title">Schweineaim</h1>
 				<div className="right-title">Remixed</div>
 			</div>
 			<img
