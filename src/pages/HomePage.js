@@ -5,9 +5,10 @@ import './HomePage.css';
 import Team from "../components/Team";
 import MapCard from "../components/MapCard";
 import Loader from "../components/Loader";
+import FinishChart from "../components/FinishChart";
 
-const finishUrl = "https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getFinishes";
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getMaps';
+const finishUrl = "https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getFinishes";
+const mapsUrl = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getMaps';
 
 const HomePage = () => {
 	const [mapData, setMapData] = useState(undefined);
@@ -46,6 +47,7 @@ const HomePage = () => {
 		return (
 			<div className="homepage-container">
 				<Team />
+				<FinishChart />
 				<h2 className="team-title">Bereits abgeschlossene Maps:</h2>
 				<div className="center-grid">
 					<div className="map-grid">

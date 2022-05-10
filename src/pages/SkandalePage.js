@@ -16,7 +16,7 @@ import nallikPic from '../img/nallik.png';
 
 import './SkandalePage.css';
 
-const scandalsURL = 'https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getScandals'
+const scandalsURL = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getScandals'
 
 const SkandalePage = () => {
 	const [scandals, setScandals] = useState([]);
@@ -27,7 +27,7 @@ const SkandalePage = () => {
 			.then(res => {
 				setScandals(res.data);
 			})
-	}, [])
+	}, []);
 
 	const renderScandals = () => {
 		return scandals.map((scan, index) => {

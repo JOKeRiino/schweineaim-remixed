@@ -1,0 +1,15 @@
+.graph-container{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.custom-tooltip {
+	font-size: .8rem;
+	background-color: white;
+	padding: 5px;
+}
+
+.custom-tooltip .label {
+	color: black;
+}

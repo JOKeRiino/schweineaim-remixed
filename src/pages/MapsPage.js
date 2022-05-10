@@ -4,7 +4,7 @@ import axios from "axios";
 import MapCard from "../components/MapCard";
 import Loader from "../components/Loader";
 
-const mapsUrl = 'https://script.google.com/macros/s/AKfycbxVAEPKBAo_0L-Uh5OZqO_LNF85jNdvEu5KcQZmxdtpeb7Q-nYgNgjSgdSmYTQvgSfE/exec?action=getMaps';
+const mapsUrl = 'https://script.google.com/macros/s/AKfycbyPNjPjDSnF1NYvqfsjGsBnb8c6yjiDuXHnqwbhkbmcNQ7Qve-U3U2lgaGryLu1Y_n55w/exec?action=getMaps';
 
 const MapsPage = () => {
 	const [mapData, setMapData] = useState(null);
