@@ -1,0 +1,47 @@
+.td-dif1 {
+	color: greenyellow;
+	font-weight: 500;
+}
+.td-dif2 {
+	color: orange;
+	font-weight: 500;
+}
+.td-dif3 {
+	color: red;
+	font-weight: 500;
+}
+.td-dif4 {
+	color: purple;
+	font-weight: 500;
+}
+.td-dif5 {
+	color: #fff;
+	font-weight: 500;
+}
+
+.notfinished-link {
+	padding: 0px 5px;
+}
+
+.notfin-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+td {
+	word-wrap: break-word;
+}
+
+td:nth-child(1) {
+	padding: 10px;
+}
+
+.notfin-table-div {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.notfin-table-div {
+		width: 95%;
+		margin: 0px auto;
+	}
+}

@@ -4,9 +4,11 @@ import axios from "axios";
 
 import Loader from "../components/Loader";
 import MapFinishCard from "../components/MapFinishCard";
+import FinishedByTypeChart from "../components/FinishedByTypeChart";
 import { playerUrl, mapsUrl } from "../api.config";
 
 import './MemberPage.css';
+import NotYetFinished from "../components/NotYetFinished";
 
 const MemberPage = () => {
 	const [playerData, setPlayerData] = useState(undefined);
@@ -63,6 +65,10 @@ const MemberPage = () => {
 				{renderQuote()}
 				<div className={"titlelvl"}>
 					Finished: {playerData.length}/51
+				</div>
+				<div className="member-flex">
+					<NotYetFinished playerFins={playerData} maps={mapData} />
+					<FinishedByTypeChart playerFins={playerData} />
 				</div>
 				<div className="center-grid">
 					<div className="mapfin-grid">

@@ -19,6 +19,7 @@
 		"react-twitch-embed": "^2.1.0",
 		"recharts": "^2.1.9",
 		"save-dev": "^0.0.1-security",
+		"victory": "^36.4.0",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {

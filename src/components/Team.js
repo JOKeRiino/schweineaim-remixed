@@ -63,12 +63,12 @@ const Team = ({ all }) => {
 								</tr>
 								<tr>
 									<td>😶‍🌫️ Smith:</td>
-									<td>?</td>
-									<td>?</td>
+									<td><a href="https://www.twitch.tv/desmith96" target="_blank" rel="noreferrer">Twitch</a></td>
+									<td><a href="https://twitter.com/DeSmithCSGO" target="_blank" rel="noreferrer">Twitter</a></td>
 								</tr>
 								<tr>
 									<td>🐧 Nallik:</td>
-									<td>?</td>
+									<td></td>
 									<td><a href="https://twitter.com/na1lik" target="_blank" rel="noreferrer">Twitter</a></td>
 								</tr>
 							</tbody>
