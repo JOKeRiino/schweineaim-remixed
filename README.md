@@ -10,9 +10,12 @@
 - Is literally just a google sheet that serves as an API using google scripts
 
 ## Current Release
-1.0.0 Initial Release
+1.1.0
 
 - Added Charts
 - Overall Code Cleanup
 - Various bugfixes
 - Changed png to webp and compressed gifs
+- Added Timer
+- Experimental feature (bigger videos mode)
+- Pig logo is now routing to homepage (more intuitive)

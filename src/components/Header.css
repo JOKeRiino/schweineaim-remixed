@@ -40,6 +40,16 @@
 	width: 140px;
 	height: 140px;
 	left: calc(50% - 70px);
+	cursor: pointer;
+}
+
+.header-container .logo-link {
+	position: absolute;
+	top: 10;
+	width: 140px;
+	height: 140px;
+	left: calc(50% - 70px);
+	z-index: 999;
 }
 
 .header-container ul {

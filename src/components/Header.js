@@ -12,11 +12,13 @@ const Header = () => {
 				<h1 className="left-title">Schweineaim</h1>
 				<div className="right-title">Remixed</div>
 			</div>
-			<img
-				src={schweineaim}
-				id="trill-logo"
-				alt="trilluxe logo"
-			/>
+			<Link to="/" className="logo-link">
+				<img
+					src={schweineaim}
+					id="trill-logo"
+					alt="trilluxe logo"
+				/>
+			</Link>
 			<nav>
 				<ul>
 					<li>

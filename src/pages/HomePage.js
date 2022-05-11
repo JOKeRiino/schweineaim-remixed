@@ -8,6 +8,7 @@ import FinishChart from "../components/FinishChart";
 import { finishUrl, mapsUrl } from '../api.config';
 
 import './HomePage.css';
+import Countdown from "../components/Countdown";
 
 const HomePage = () => {
 	const [mapData, setMapData] = useState(undefined);
@@ -46,6 +47,7 @@ const HomePage = () => {
 		return (
 			<div className="homepage-container">
 				<Team />
+				<Countdown />
 				<FinishChart />
 				<h2 className="team-title">
 					Recently Finished Maps

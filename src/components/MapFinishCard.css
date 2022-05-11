@@ -1,9 +1,9 @@
 .map-fin-box {
 	position: relative;
-	width: 320px;
-	min-width: 300px;
-	height: 300px;
-	transition: .5s;
+	width: 100%;
+	min-width: 320px;
+	min-height: 270px;
+	height: 100%;
 	background: linear-gradient(to bottom right, #141E30, #243B55);
 	border-width: 4px;
 	border-style: solid;
@@ -79,6 +79,15 @@
 	text-align: center;
 }
 
+.map-fin-box .fs-button {
+	position: absolute;
+	z-index: 3;
+	bottom: 5px;
+	right: 5px;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
 .map-fin-box .maplvl {
 	position: absolute;
 	z-index: 3;
@@ -113,4 +122,18 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.grid-active {
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+	min-height: 440px;
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	.grid-active{
+		grid-column-start: span 1;
+		height: 100%;
+	}
 }
