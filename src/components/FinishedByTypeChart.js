@@ -25,11 +25,11 @@ const FinishedByTypeChart = ({ playerFins }) => {
 		})
 
 		const chartData = [
-			{ x: "Free", values: filterChartData(finData, 1), y: filterChartData(finData, 1).length },
-			{ x: "Finishable", values: filterChartData(finData, 2), y: filterChartData(finData, 2).length },
-			{ x: "Hard", values: filterChartData(finData, 3), y: filterChartData(finData, 3).length },
-			{ x: "Impossible", label: filterChartData(finData, 4), y: filterChartData(finData, 4).length },
-			{ x: "Bruh", values: filterChartData(finData, 5), y: filterChartData(finData, 5).length },
+			{ x: `Free (${filterChartData(finData, 1).length})`, values: filterChartData(finData, 1), y: filterChartData(finData, 1).length },
+			{ x: `Finishable (${filterChartData(finData, 2).length})`, values: filterChartData(finData, 2), y: filterChartData(finData, 2).length },
+			{ x: `Hard (${filterChartData(finData, 3).length})`, values: filterChartData(finData, 3), y: filterChartData(finData, 3).length },
+			{ x: `Impossible (${filterChartData(finData, 4).length})`, label: filterChartData(finData, 4), y: filterChartData(finData, 4).length },
+			{ x: `Bruh (${filterChartData(finData, 5).length})`, values: filterChartData(finData, 5), y: filterChartData(finData, 5).length },
 		]
 
 		return (
