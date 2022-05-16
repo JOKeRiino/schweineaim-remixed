@@ -7,8 +7,8 @@ import roederPic from '../img/röder.webp';
 import marfPic from '../img/marf.webp';
 import fibuPic from '../img/fibu.webp';
 import bladerPic from '../img/blader.webp';
-import schweineaimPic from '../img/schweineaim.webp';
 import nallikPic from '../img/nallik.webp';
+import smithPic from '../img/smith.webp';
 
 import './Team.css';
 
@@ -19,7 +19,7 @@ const Team = ({ all }) => {
 			<div className="team-container">
 				<Member name="Röder" imgSrc={roederPic} />
 				<Member name="Trilluxe" imgSrc={trilluxePic} />
-				<Member name="Smith" imgSrc={schweineaimPic} />
+				<Member name="Smith" imgSrc={smithPic} />
 				{all ?
 					<React.Fragment>
 						<Member name="Blader" imgSrc={bladerPic} />

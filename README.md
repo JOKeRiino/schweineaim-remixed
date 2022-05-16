@@ -19,3 +19,7 @@
 - Added Timer
 - Experimental feature (bigger videos mode)
 - Pig logo is now routing to homepage (more intuitive)
+- Member page shows unfinished maps
+- Member page shows finished maps by type chart
+- finished by type chart also shows the count
+- Added final Profile Images to some profiles

@@ -10,6 +10,7 @@ import marfPic from '../img/marf.webp';
 import bladerPic from '../img/blader.webp';
 import fibuPic from '../img/fibu.webp';
 import nallikPic from '../img/nallik.webp';
+import smithPic from '../img/smith.webp';
 
 import './FinCard.css';
 
@@ -30,6 +31,8 @@ const FinCard = ({ fin }) => {
 				return fibuPic;
 			case 'Nallik':
 				return nallikPic;
+			case 'Smith':
+				return smithPic;
 			default:
 				return schweinePic;
 		}
