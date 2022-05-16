@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/schweineaim-remixed/static/css/main.550d7872.css",
-    "main.js": "/schweineaim-remixed/static/js/main.7f832adc.js",
+    "main.js": "/schweineaim-remixed/static/js/main.ec3d1504.js",
     "static/media/kekw.gif": "/schweineaim-remixed/static/media/kekw.8de04908acb88642b633.gif",
     "static/media/loading.gif": "/schweineaim-remixed/static/media/loading.fe0d9d9007d00ae3eee9.gif",
     "static/media/modcheck.gif": "/schweineaim-remixed/static/media/modcheck.dada98a2b7c38da96ded.gif",
     "static/media/schweineaim.webp": "/schweineaim-remixed/static/media/schweineaim.2eb4aa6bc6a9c85613c8.webp",
     "static/media/copium.webp": "/schweineaim-remixed/static/media/copium.754d60782bd141fe57cd.webp",
+    "static/media/smith.webp": "/schweineaim-remixed/static/media/smith.a226bd7a7c42e26b9872.webp",
     "static/media/nallik.webp": "/schweineaim-remixed/static/media/nallik.1c466b67773586ada6c2.webp",
     "static/media/blader.webp": "/schweineaim-remixed/static/media/blader.94085876eba7e3e9d957.webp",
     "static/media/marf.webp": "/schweineaim-remixed/static/media/marf.eafa63e73b9d8dd5edac.webp",
@@ -15,10 +16,10 @@
     "static/media/trilluxe.webp": "/schweineaim-remixed/static/media/trilluxe.e43967d94edaf3a05a13.webp",
     "index.html": "/schweineaim-remixed/index.html",
     "main.550d7872.css.map": "/schweineaim-remixed/static/css/main.550d7872.css.map",
-    "main.7f832adc.js.map": "/schweineaim-remixed/static/js/main.7f832adc.js.map"
+    "main.ec3d1504.js.map": "/schweineaim-remixed/static/js/main.ec3d1504.js.map"
   },
   "entrypoints": [
     "static/css/main.550d7872.css",
-    "static/js/main.7f832adc.js"
+    "static/js/main.ec3d1504.js"
   ]
 }
